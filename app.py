@@ -2,7 +2,7 @@ import asyncio
 import websockets
 import time
 async def hello():
-    async with websockets.connect("ws://localhost:8000/ws/test/",open_timeout=10,close_timeout=10) as websocket:
+    async with websockets.connect("ws://88.215.115.34:8000/ws/test/",open_timeout=10,close_timeout=10) as websocket:
         try:
             await websocket.send(str(400))
             print("sent",400)
